@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ahmad Jbara - Faculty Profile</title>
+    <title>Dr. John Doe - Faculty Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,6 +67,32 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Profile Picture */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-info h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Research & Publications */
         .profile-section h2, .research-section h2, .publications-section h2 {
             font-size: 24px;
             color: #333;
@@ -106,6 +132,16 @@
             nav a {
                 padding: 10px;
             }
+
+            .profile-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -113,7 +149,7 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Dr. Ahmad Jbara</h1>
+        <h1>Dr. John Doe</h1>
         <p>Professor of Computer Science | University of Example</p>
     </header>
 
@@ -131,7 +167,11 @@
         <!-- Profile Section -->
         <div id="profile" class="profile-section">
             <h2>About Me</h2>
-            <p>Hello! I am Dr. Ahmad Jbara, a professor in the Department of Computer Science at the University of Example. My research interests include machine learning, artificial intelligence, and data science. I have taught various undergraduate and graduate courses on programming, algorithms, and AI. I am passionate about mentoring students and advancing knowledge in the field of computer science.</p>
+            <div class="profile-info">
+                <!-- Profile Picture -->
+                <img src="path/to/your-image.jpg" alt="Dr. John Doe" class="profile-image">
+                <p>Hello! I am Dr. John Doe, a professor in the Department of Computer Science at the University of Example. My research interests include machine learning, artificial intelligence, and data science. I have taught various undergraduate and graduate courses on programming, algorithms, and AI. I am passionate about mentoring students and advancing knowledge in the field of computer science.</p>
+            </div>
         </div>
 
         <!-- Research Interests Section -->
@@ -161,7 +201,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Dr. Ahmad Jbara | <a href="https://www.university.edu" target="_blank">University of Example</a></p>
+        <p>&copy; 2025 Dr. John Doe | <a href="https://www.university.edu" target="_blank">University of Example</a></p>
     </footer>
 
 </body>

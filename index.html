@@ -191,6 +191,38 @@
                 <li><strong>Doe, J. (2022). </strong>"Exploring Machine Learning Models for Image Recognition," <em>Proceedings of the International Conference on Computer Vision</em>, 9(1), 45-60.</li>
                 <li><strong>Doe, J., & Brown, L. (2021). </strong>"Ethical Challenges in AI Development," <em>AI Ethics Journal</em>, 30(4), 220-233.</li>
             </ul>
+            <script>
+                // Fetch the .bib file from the repository
+fetch('assets/publications.bib') // Adjust the path if needed
+  .then(response => response.text()) // Read the file content as text
+  .then(bibtexString => {
+    // Parse the BibTeX content using bibtex-js
+    var publications = BibtexParser.parse(bibtexString);
+    
+    // Create an HTML list of publications
+    var outputHtml = '<ul>';
+
+    publications.forEach(pub => {
+      outputHtml += '<li>';
+      outputHtml += `<strong>${pub.author} (${pub.year})</strong>: `;
+      outputHtml += `<em>${pub.title}</em>, `;
+      outputHtml += `${pub.journal}, ${pub.volume}(${pub.number}): ${pub.pages}. `;
+      if (pub.doi) {
+        outputHtml += `<a href="https://doi.org/${pub.doi}">DOI: ${pub.doi}</a>`;
+      }
+      outputHtml += '</li>';
+    });
+
+    outputHtml += '</ul>';
+
+    // Insert the HTML into the page
+    document.getElementById('publications-list').innerHTML = outputHtml;
+  })
+  .catch(error => {
+    console.error('Error fetching or parsing the BibTeX file:', error);
+  });
+
+            </script>
         </div>
 
         <!-- Contact Section -->

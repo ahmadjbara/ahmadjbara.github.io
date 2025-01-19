@@ -162,14 +162,36 @@
               color: #333;
         }
 
-        .latest-news ul {
-              list-style-type: none;
-              padding: 0;
+     .news-ticker {
+          position: relative;
+          height: 80px; /* Matches the height of the visible ticker */
+          overflow: hidden;
         }
 
-        .latest-news li {
-              margin-bottom: 10px;
+    .news-ticker ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          animation: scroll-news 10s linear infinite; /* Adjust duration as needed */
         }
+
+    .news-ticker li {
+          padding: 10px 0;
+          font-size: 1em;
+          color: #007BFF;
+          text-align: center;
+        }
+
+    /* Animation for scrolling */
+    @keyframes scroll-news {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
 
         .latest-news a {
               text-decoration: none;

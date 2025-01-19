@@ -144,6 +144,41 @@
                 margin-bottom: 10px;
             }
         }
+        .latest-news {
+  position: absolute;
+  top: 100px; /* Adjust based on your layout */
+  right: 20px; /* Distance from the right edge */
+  width: 300px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.latest-news h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.latest-news ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.latest-news li {
+  margin-bottom: 10px;
+}
+
+.latest-news a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.latest-news a:hover {
+  text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -166,6 +201,16 @@
 
     <!-- Main Content -->
     <div class="container">
+
+<div class="latest-news">
+  <h3>Latest News</h3>
+  <ul>
+    <li><a href="#">Conference appearance announcement</a></li>
+    <li><a href="#">New publication in Journal X</a></li>
+    <li><a href="#">Keynote speech details</a></li>
+  </ul>
+</div>
+
         
         <!-- Profile Section -->
         <div id="profile" class="profile-section">

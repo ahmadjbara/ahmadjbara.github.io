@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bibtex-js@1.0.0/bibtex.min.js"></script>
+    <title>Ahmad Jbara - Faculty Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-top: 5px;
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #444;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content */
+        .container {
+            width: 70%;
+            margin: 50px auto;
+        }
+
+        .profile-section, .research-section, .publications-section, .teaching-section, .service-section, .projects-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Picture */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-info h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Research & Publications */
+        .profile-section h2, .research-section h2, .publications-section h2, .teaching-section h2, .service-section h2, .projects-section h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-section p, .research-section p, .publications-section p, .teaching-section p, .service-section p, .projects-section p{
+            font-size: 18px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .profile-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        .latest-news {
+              position: absolute;
+              top: 210px; /* Adjust based on your layout */
+              right: 20px; /* Distance from the right edge */
+              width: 220px;
+              padding: 10px;
+              background-color: #f4f4f4;
+              border: 1px solid #ccc;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+              height: 300px;
+              overflow: hidden;
+        }
+
+        .latest-news h3 {
+              margin-top:0px;
+              font-size: 1.2em;
+              color: #333;
+        }
+
+     .news-ticker {
+          position: relative;
+          height: 180px; /* Matches the height of the visible ticker */
+          overflow: hidden;
+        }
+
+    .news-ticker ul {
+          list-style-type: disc;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          animation: scroll-news 30s linear infinite; /* Adjust duration as needed */
+        }
+ .news-ticker ul:hover {
+         animation-play-state: paused;
+        }
+
+    .news-ticker li {
+          padding: 10px 0;
+          font-size: 0.8em;
+          color: #007BFF;
+          text-align: left;
+        }
+
+    /* Animation for scrolling */
+    @keyframes scroll-news {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+        .latest-news a {
+              text-decoration: none;
+              color: #007BFF;
+        }
+
+        .latest-news a:hover {
+              text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Ahmad Jbara</h1>
+        <p></p>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        <a href="index.html#profile">Profile</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#teaching">Teaching</a>
+        <a href="index.html#service">Service</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+
+<div class="latest-news">
+  <h3>Latest News</h3>
+    <div class="news-ticker">
+      <ul>
+        <li><a href="#">My research paper has been accepted at the IEEE Aerospace Conference</a></li>
+        <li><a href="#">I'm happy to share that I will be serving as a PC member for the ETRA 2025 conference</a></li>
+        <li><a href="#">I'm happy to share that I will be serving as a PC member for the ICPC 2025 conference - Tool Demo Track</a></li>
+      </ul>
+    </div>
+</div>
+      
+<!-- Publications Section -->
+        <div id="publications" class="publications-section">
+            <h2>Publications</h2>
+          <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FAJs8Cv5sDv5L6rFkP&noBootstrap=1&jsonp=1&authorFirst=1"></script>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>Email: ahmadjbara@netanya.ac.il</p>
+            <p></p>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Ahmad Jbara | <a href="https://www.netanya.ac.il" target="_blank">Netanya Academic College & Technion</a></p>
+    </footer>
+
+</body>
+</html>
